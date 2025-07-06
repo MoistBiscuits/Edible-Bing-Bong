@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>EdibleBingBong</AssemblyName>
+    <Product>Edible Bing Bong</Product>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.samboy.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>EdibleBingBong</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="6000.0.36" IncludeAssets="compile" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+	
+	<ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>lib\Assembly-CSharp.dll</HintPath>
+    </Reference>
+		<Reference Include="Photon3Unity3D.dll">
+			<HintPath>.\lib\Photon3Unity3D.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonChat.dll">
+			<HintPath>.\lib\PhotonChat.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonRealtime.dll">
+			<HintPath>.\lib\PhotonRealtime.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Demos.dll">
+			<HintPath>.\lib\PhotonUnityNetworking.Demos.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.dll">
+			<HintPath>.\lib\PhotonUnityNetworking.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Utilities.dll">
+			<HintPath>.\lib\PhotonUnityNetworking.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice.API.dll">
+			<HintPath>.\lib\PhotonVoice.API.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice.dll">
+			<HintPath>.\lib\PhotonVoice.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice.PUN.dll">
+			<HintPath>.\lib\PhotonVoice.PUN.dll</HintPath>
+		</Reference>
+		<Reference Include="Zorro.Core.Runtime.dll">
+			<HintPath>.\lib\Zorro.Core.Runtime.dll</HintPath>
+		</Reference>
+  </ItemGroup>
+</Project>
