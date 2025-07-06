@@ -1,6 +1,10 @@
+# Edible Bing Bong
+
 A simple mod for the game PEAkthat allows you to eat the plushie Bing Bong.
 
 I made this plugin as a test for writting binary injection mods for Unity.
+
+You can find the mod itself for download [here](https://thunderstore.io/c/peak/p/Moistbiscuits/Edible_Bing_Bong/)
 
 # How to build
 

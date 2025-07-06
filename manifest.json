@@ -1,0 +1,9 @@
+{
+    "name": "Edible_Bing_Bong",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/MoistBiscuits/Edible-Bing-Bong",
+    "description": "A simple mod that lets you devour the bing bong plushie, he is however highly toxic",
+    "dependencies": [
+        "dependencies": ["BepInEx-BepInExPack-5.4.2403"]
+    ]
+}
