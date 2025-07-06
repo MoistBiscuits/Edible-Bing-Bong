@@ -8,6 +8,8 @@ You will need your own installation of PEAK
 From the games root directory take the .dll files in `\PEAK\PEAK_Data\Managed` and copy the .dll files into this repositories `\lib` fodler
 The exact .dll files needed can be seen by veing the `EdibleBingBong.csproj` file
 
-How to run the mod
+Build the project via runnning `dotnet build` in the terminal
+
+# How to run the mod
 
 TODO, I am still setting up where to host this mod.
